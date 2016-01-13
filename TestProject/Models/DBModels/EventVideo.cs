@@ -11,7 +11,9 @@ namespace TestProject.Models.DBModels
     {
         [Key]
         public Guid Id { get; set; }
-        public virtual ICollection<Event> Event { get; set; }
+
+        [ForeignKey("Event")]
+        public virtual Event Event { get; set; }
         public bool Approved { get; set; }
     }
 }
