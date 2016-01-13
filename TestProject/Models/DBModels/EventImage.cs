@@ -14,6 +14,8 @@ namespace TestProject.Models.DBModels
         public Guid Id { get; set; }
 
         [ForeignKey("Event")]
+        public Guid EventId { get; set; }
+
         public virtual Event Event { get; set; }
         public bool Approved { get; set; }
 

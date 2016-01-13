@@ -9,6 +9,11 @@ namespace TestProject.Models.DBContext
 {
     public class DatabaseContext:DbContext
     {
+        public DatabaseContext() : base("TravelConnection")
+        {
+
+        }
+
         public DbSet<District> Districts { get; set; }
         public DbSet<Place> Places { get; set; }
         public DbSet<Event> Eventss { get; set; }

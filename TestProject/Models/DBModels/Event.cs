@@ -30,7 +30,7 @@ namespace TestProject.Models.DBModels
         public string Description { get; set; }
 
         [ForeignKey("District")]
-        public Guid DistrictId { get; set; }
+        public int DistrictId { get; set; }
         public virtual District District { get; set; }
         public virtual ICollection<EventImage> EventImage { get; set; }
         public virtual ICollection<EventVideo> EventVideo { get; set; }

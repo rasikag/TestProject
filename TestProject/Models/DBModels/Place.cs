@@ -20,7 +20,7 @@ namespace TestProject.Models.DBModels
         public DateTime PlaceCloseTime { get; set; }
         public string Description { get; set; }
         [ForeignKey("District")]
-        public Guid DistrictId { get; set; }
+        public int DistrictId { get; set; }
         public virtual District District { get; set; }
         public virtual ICollection<PlaceImage> PlaceImage { get; set; }
         public virtual ICollection<PlaceVideo> PlaceVideo { get; set; }
