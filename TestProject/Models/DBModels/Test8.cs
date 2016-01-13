@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestProject.Models.DBModels
 {
-    public class TestTest
+    class Test8
     {
     }
 }
