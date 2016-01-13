@@ -12,11 +12,21 @@ namespace TestProject.Models.DBModels
     {
         [Key]
         public Guid Id { get; set; }
+
+        [Column("Name", TypeName = "varchar")]
+        [StringLength(25)]
         public string EventName { get; set; }
-        public string City { get; set; }
-        public Address Address { get; set; }
+
+        [Column("City", TypeName = "varchar")]
+        [StringLength(25)]
+        public string EventLocatedCity { get; set; }
+
+        [Column("Address", TypeName = "varchar")]
+        [StringLength(250)]
+        public string Address { get; set; }
         public DateTime EventStartTime { get; set; }
         public DateTime EventEndTime { get; set; }
+        [Column(TypeName = "ntext")]
         public string Description { get; set; }
 
         [ForeignKey("District")]
