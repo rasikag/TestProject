@@ -184,6 +184,7 @@
     <Compile Include="Models\DBModels\PlaceComment.cs" />
     <Compile Include="Models\DBModels\PlaceImage.cs" />
     <Compile Include="Models\DBModels\PlaceVideo.cs" />
+    <Compile Include="Models\DBModels\TestTest.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
