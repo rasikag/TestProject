@@ -14,6 +14,20 @@ namespace TestProject.Models.DBContext
 
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Perfil>()
+            .HasMany(p => p.Recursos)
+            .WithMany(r => r.Perfis)
+            .Map(mc =>
+            {
+                mc.MapLeftKey("IdPerfil");
+                mc.MapRightKey("IdRecurso");
+                mc.ToTable("PerfilRecurso");
+            });
+        }
+
+
         public DbSet<District> Districts { get; set; }
         public DbSet<Place> Places { get; set; }
         public DbSet<Event> Eventss { get; set; }
