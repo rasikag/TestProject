@@ -35,5 +35,6 @@ namespace TestProject.Models.DBModels
         public virtual ICollection<EventImage> EventImage { get; set; }
         public virtual ICollection<EventVideo> EventVideo { get; set; }
         public virtual ICollection<EventComment> EventComment { get; set; }
+
     }
 }
