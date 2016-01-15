@@ -17,7 +17,7 @@ namespace TestProject.Controllers
     {
 
 
-        private readonly string workingFolder = HttpRuntime.AppDomainAppPath + @"\Uploads";
+        private readonly string workingFolder = HttpRuntime.AppDomainAppPath + @"\Images\SliderImages";
 
         /// <summary>
         ///   Get all photos
