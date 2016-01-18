@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+
+}
+<style>
+    .section {
+        background-size: cover;
+    }
+
+    .slide {
+        background-size: cover;
+    }
+</style>
+
+
+@section Scripts{
+    <link href="@Url.Content("~/Content/fullPage/jquery.fullPage.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery.fullPage.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.11.4.js")" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                verticalCentered: false
+
+            });
+        });
+    </script>
+
+}
+
+
+<div id="fullpage" class="container body-content">
+    <div class="section" id="section0">
+        <div class="slide">
+            <img src="" data-src="@Url.Content("~/Images/SliderImages/bg1.jpg")" alt="image1" />
+        </div>
+        <div class="slide">
+            <img src="" data-src="@Url.Content("~/Images/SliderImages/bg2.jpg")" alt="image1" />
+        </div>
+    </div>
+</div>
+
+
+
