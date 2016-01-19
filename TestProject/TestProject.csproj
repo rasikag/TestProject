@@ -229,7 +229,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\customScrollBar\jquery.mCustomScrollbar.css" />
     <Content Include="Content\fullPage\jquery.fullPage.css" />
+    <Content Include="Content\MetroJS\MetroJs.css" />
+    <Content Include="Content\MetroJS\MetroJs.min.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -267,6 +270,38 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\1tw.gif" />
+    <Content Include="Images\2tw.gif" />
+    <Content Include="Images\3tw.gif" />
+    <Content Include="Images\4tw.gif" />
+    <Content Include="Images\Places\Place01\a.JPG" />
+    <Content Include="Images\Places\Place01\b.JPG" />
+    <Content Include="Images\Places\Place01\c.jpg" />
+    <Content Include="Images\Places\Place01\d.jpg" />
+    <Content Include="Images\Places\Place02\a.JPG" />
+    <Content Include="Images\Places\Place02\b.JPG" />
+    <Content Include="Images\Places\Place02\c.jpg" />
+    <Content Include="Images\Places\Place02\d.jpg" />
+    <Content Include="Images\Places\Place03\a.jpg" />
+    <Content Include="Images\Places\Place03\b.jpg" />
+    <Content Include="Images\Places\Place03\c.jpg" />
+    <Content Include="Images\Places\Place03\d.jpg" />
+    <Content Include="Images\Places\Place04\a.jpg" />
+    <Content Include="Images\Places\Place04\b.jpg" />
+    <Content Include="Images\Places\Place04\c.jpg" />
+    <Content Include="Images\Places\Place04\d.jpg" />
+    <Content Include="Images\Places\Place05\a.jpg" />
+    <Content Include="Images\Places\Place05\b.jpg" />
+    <Content Include="Images\Places\Place05\c.jpg" />
+    <Content Include="Images\Places\Place05\d.JPG" />
+    <Content Include="Images\Places\Place06\a.jpg" />
+    <Content Include="Images\Places\Place06\b.jpg" />
+    <Content Include="Images\Places\Place06\c.jpg" />
+    <Content Include="Images\Places\Place06\d.jpg" />
+    <Content Include="Images\Places\Place07\a.jpg" />
+    <Content Include="Images\Places\Place07\b.jpg" />
+    <Content Include="Images\Places\Place07\c.jpg" />
+    <Content Include="Images\Places\Place07\d.jpg" />
     <Content Include="Images\SliderImages\bg1.jpg" />
     <Content Include="Images\SliderImages\bg2.jpg" />
     <Content Include="Images\SliderImages\bg3.jpg" />
@@ -305,6 +340,8 @@
     <Content Include="Scripts\AppFileUpload\services\fileService.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\CustomScrollBar\jquery.mCustomScrollbar.min.js" />
+    <Content Include="Scripts\CustomScrollBar\jquery.mousewheel.min.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-touch.min.js.map" />
@@ -1073,6 +1110,8 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
+    <Content Include="Scripts\ImageGrid\app.js" />
+    <Content Include="Scripts\ImageGrid\grid-controller.js" />
     <Content Include="Scripts\jquery-2.2.0.js" />
     <Content Include="Scripts\jquery-2.2.0.min.js" />
     <Content Include="Scripts\jquery-2.2.0.min.map" />
@@ -1085,6 +1124,10 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MetroJs\MetroJs.css" />
+    <Content Include="Scripts\MetroJs\MetroJs.js" />
+    <Content Include="Scripts\MetroJs\MetroJs.min.css" />
+    <Content Include="Scripts\MetroJs\MetroJs.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\ng-file-upload-all.js" />
     <Content Include="Scripts\ng-file-upload-all.min.js" />
@@ -1132,9 +1175,14 @@
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Admin\UpdateSliderImage.cshtml" />
     <Content Include="Views\TestWeb\Index.cshtml" />
+    <Content Include="Views\TestWeb\TileView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\Places\Place08\" />
+    <Folder Include="Images\Places\Place09\" />
+    <Folder Include="Images\Places\Place10\" />
+    <Folder Include="Scripts\MetroJs\images\" />
     <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>

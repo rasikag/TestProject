@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "TileView";
+    Layout = "";
+}
+
+<h2>TileView</h2>
+
+<link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" />
+<link href="~/Content/MetroJS/MetroJs.css" rel="stylesheet" />
+<link href="~/Content/customScrollBar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+
+<script src="~/Scripts/angular.js"></script>
+<script src="@Url.Content("~/Scripts/jquery-2.2.0.js")" ty type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/bootstrap.js")" ty type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/MetroJs/MetroJs.js")" ty type="text/javascript"></script>
+<script src="~/Scripts/jquery-ui-1.11.4.js"></script>
+<script src="~/Scripts/CustomScrollBar/jquery.mCustomScrollbar.min.js"></script>
+<script src="~/Scripts/CustomScrollBar/jquery.mousewheel.min.js"></script>
+<h1>Carousel Mode: Random Options</h1>
+
+
+
+
+<div ng-app="imageGird">
+    <section>
+        <div class="myScrollBar mCustomScrollbar col-lg-8 col-lg-offset-2">
+            <div class="container" ng-controller="gridController">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div ng-repeat="item in districPlacesSize">
+                        <div class="trans">
+                            <div data-mode={{item.data_mode}} data-start-now="true" class="live-tile trans" data-repeat='0' ng-click="hello(item.data_mode)">
+                                <div>
+                                    <div class="tile-title accent trans accentHover">slide tile</div>
+                                    <img class="full" ng-src="{{item.image1}}" alt="1" />
+                                </div>
+                                <div>
+                                    <div class="tile-title accent trans">slide tile</div>
+                                    <img class="full" ng-src={{item.image2}} alt="2" />
+                                </div>
+                                <div>
+                                    <div class="tile-title accent trans">slide tile</div>
+                                    <img class="full" ng-src={{item.image3}} alt="3" />
+                                </div>
+                                <div>
+                                    <div class="tile-title accent trans">slide tile</div>
+                                    <img class="full" ng-src={{item.image4}} alt="4" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+<script src="~/Scripts/ImageGrid/app.js"></script>
+<script src="~/Scripts/ImageGrid/grid-controller.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+
+      
+            $(".myScrollBar").mCustomScrollbar({
+                theme: "dark-3"
+
+            });
+        
+
+        function getRandomOptions() {
+
+            var doIt = Math.floor(Math.random() * 1001) % 2 == 0;
+            return {
+                index: "next",
+                delay: 2000,
+                animationDirection: doIt ? 'forward' : 'backward',
+                direction: doIt ? 'vertical' : 'horizontal'
+            };
+        }
+
+        $(".live-tile").liveTile({
+            animationComplete: function (tileData) {
+                $(this).liveTile("goto", getRandomOptions());
+            },
+            click: function () {
+
+            }
+        }).liveTile("goto", getRandomOptions());
+    });
+
+
+</script>

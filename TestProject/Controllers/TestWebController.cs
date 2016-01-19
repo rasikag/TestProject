@@ -13,5 +13,11 @@ namespace TestProject.Controllers
         {
             return View();
         }
+
+        public ActionResult TileView()
+        {
+            return View();
+        }
+
     }
 }
