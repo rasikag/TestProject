@@ -65,7 +65,8 @@
 
       
             $(".myScrollBar").mCustomScrollbar({
-                theme: "dark-3"
+                theme: "dark-3",
+                setHeight : 500
 
             });
         
@@ -75,7 +76,7 @@
             var doIt = Math.floor(Math.random() * 1001) % 2 == 0;
             return {
                 index: "next",
-                delay: 2000,
+                delay: 1000,
                 animationDirection: doIt ? 'forward' : 'backward',
                 direction: doIt ? 'vertical' : 'horizontal'
             };

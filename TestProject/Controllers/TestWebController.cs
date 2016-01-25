@@ -19,5 +19,26 @@ namespace TestProject.Controllers
             return View();
         }
 
+        public ActionResult TestKendo()
+        {
+            return View();
+        }
+
+        public ActionResult SriLankaMap()
+        {
+            return View();
+        }
+
+        public ActionResult DistrictDetail()
+        {
+            return View();
+        }
+
+        public ActionResult AddComment()
+        {
+            return View();
+        }
+
+
     }
 }

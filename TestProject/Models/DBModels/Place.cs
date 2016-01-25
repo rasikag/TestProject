@@ -18,6 +18,10 @@ namespace TestProject.Models.DBModels
         public string Address { get; set; }
         public DateTime PlaceOpenTime { get; set; }
         public DateTime PlaceCloseTime { get; set; }
+
+        public double Longitude { get; set; }
+        public double Latitude { get; set; }
+
         public string Description { get; set; }
         [ForeignKey("District")]
         public int DistrictId { get; set; }
