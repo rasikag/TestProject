@@ -186,6 +186,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\SliderImageManageController.cs" />
     <Compile Include="Controllers\TestWebController.cs" />
+    <Compile Include="Controllers\UserCommentManageController.cs" />
     <Compile Include="Extensions\CustomMultipartFormDataStreamProvider.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -201,6 +202,10 @@
     <Compile Include="Migrations\201601140630404_add_slider_image_model_class.cs" />
     <Compile Include="Migrations\201601140630404_add_slider_image_model_class.Designer.cs">
       <DependentUpon>201601140630404_add_slider_image_model_class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601251448064_add_codinates.cs" />
+    <Compile Include="Migrations\201601251448064_add_codinates.Designer.cs">
+      <DependentUpon>201601251448064_add_codinates.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -221,6 +226,7 @@
     <Compile Include="Models\OnlyForTestModels\PhotoActionResult.cs" />
     <Compile Include="Models\OnlyForTestModels\PhotoViewModel.cs" />
     <Compile Include="Models\OnlyForTestModels\Product.cs" />
+    <Compile Include="Models\ViewModels\UserComment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -340,6 +346,8 @@
     <Content Include="Scripts\AppFileUpload\services\fileService.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\CustomScripts\Angular\app.js" />
+    <Content Include="Scripts\CustomScripts\Angular\Controllers\CommentManagement\AddCommentContoller.js" />
     <Content Include="Scripts\CustomScrollBar\jquery.mCustomScrollbar.min.js" />
     <Content Include="Scripts\CustomScrollBar\jquery.mousewheel.min.js" />
     <Content Include="Scripts\errors.json" />
@@ -1176,12 +1184,17 @@
     <Content Include="Views\Admin\UpdateSliderImage.cshtml" />
     <Content Include="Views\TestWeb\Index.cshtml" />
     <Content Include="Views\TestWeb\TileView.cshtml" />
+    <Content Include="Views\TestWeb\TestKendo.cshtml" />
+    <Content Include="Views\TestWeb\SriLankaMap.cshtml" />
+    <Content Include="Views\TestWeb\DistrictDetail.cshtml" />
+    <Content Include="Views\TestWeb\AddComment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\Places\Place08\" />
     <Folder Include="Images\Places\Place09\" />
     <Folder Include="Images\Places\Place10\" />
+    <Folder Include="Scripts\CustomScripts\Angular\Services\" />
     <Folder Include="Scripts\MetroJs\images\" />
     <Folder Include="Uploads\" />
   </ItemGroup>
@@ -1198,6 +1211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201601140630404_add_slider_image_model_class.resx">
       <DependentUpon>201601140630404_add_slider_image_model_class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601251448064_add_codinates.resx">
+      <DependentUpon>201601251448064_add_codinates.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

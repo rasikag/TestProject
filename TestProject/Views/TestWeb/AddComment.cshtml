@@ -1,26 +1,38 @@
 ﻿
 @{
     ViewBag.Title = "AddComment";
+    Layout = "";
 }
 
 <h2>AddComment</h2>
 
-<div ng-app="">
-    <form>
+    <div ng-app="travelSite">
+        <div ng-controller="addCommentController" ng-submit="submitComment()">
+            <form>
 
-        <div class="form-group">
-            <label for="name">Name :</label>
-            <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+                <div class="form-group">
+                    <label for="name">Name :</label>
+                    <input type="text" class="form-control" id="Name" placeholder="Name" name="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" class="form-control" id="Email" name="Email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment :</label>
+                    <textarea class="form-control" id="Comment" name="Comment" placeholder="Comment" rows="5" cols="20"></textarea>
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-group" value="Submit" />
+                </div>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="email">Email :</label>
-            <input type="email" class="form-control" id="email" placeholder="Email">
-        </div>
-        <div class="form-group">
-            <label for="comment">Comment :</label>
-            <textarea class="form-control" id="comment" placeholder="Comment" rows="5" cols="20"></textarea>
-        </div>
+    </div>
 
-    </form>
-</div>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/CustomScripts/Angular/app.js"></script>
+    <script src="~/Scripts/CustomScripts/Angular/Controllers/CommentManagement/AddCommentContoller.js"></script>
+
+
 
